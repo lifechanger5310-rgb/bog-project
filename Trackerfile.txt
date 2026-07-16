@@ -11,3 +11,16 @@ without re-discovering context. Append new entries — don't overwrite history.
 - Auth: gh CLI device-flow login completed for lifechanger5310-rgb
 - Status: initial scaffold only — no custom pages, styling, or features built yet
 - Next steps: TBD (style direction, page structure, visual assets not yet decided)
+
+============================
+NOTE: multi-session access
+============================
+Repo is public + same GitHub account (lifechanger5310-rgb) used across all
+Claude sessions. No collaborator/access grant needed. Any new Claude session
+that needs to push must:
+  1. git pull (or fresh clone) before starting work
+  2. Run `gh auth login --hostname github.com --git-protocol https --web`
+     (backgrounded with setsid+nohup so it survives across tool calls) and
+     have the user approve the device code in their browser
+  3. `gh auth setup-git` to wire credentials into git
+  4. Commit + push as normal
