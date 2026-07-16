@@ -1,0 +1,13 @@
+BOG PROJECT — BUILD TRACKER
+============================
+Purpose: log build progress so any Claude session/ID can resume this project
+without re-discovering context. Append new entries — don't overwrite history.
+
+============================
+[2026-07-16] Session 1
+============================
+- Repo created: lifechanger5310-rgb/bog-project (public)
+- Stack scaffolded: Next.js (App Router), TypeScript, Tailwind CSS, ESLint
+- Auth: gh CLI device-flow login completed for lifechanger5310-rgb
+- Status: initial scaffold only — no custom pages, styling, or features built yet
+- Next steps: TBD (style direction, page structure, visual assets not yet decided)
